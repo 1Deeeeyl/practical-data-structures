@@ -22,11 +22,14 @@ const problem2 =  () =>{Array.from(new Set(users.map(obj => obj.id)))
        const sorted = users.find(obj => obj.id === id)
        const obj = sorted.friends
        const friends = users.filter((item) => !obj.includes(item.id));
-
-            
-      
        return console.log(friends)
+
+    //    const final = friends.map(function(value) {
+    //     return console.log(value.friends);
+    //   });
+
+    //   console.log(final)
     })
    }
 
-// problem2()
+problem2()
